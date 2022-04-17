@@ -1,0 +1,25 @@
+.fiche2aa{
+
+    Width :437px;
+    Height :811.18px;
+    Top :190px;
+   left : 922px;
+    background-color: aqua;
+    position: absolute;
+  
+}
+.sub-menu{
+
+
+    color: #333;
+    margin-left: 20px;
+    border-left: 1px solid #666;
+    box-sizing: border-box;
+    padding-left: 30px;
+    overflow: hidden;
+    transition: max-height .2s ease-in;
+    position: absolute;
+}
+.active{
+    max-height: 200px;
+}

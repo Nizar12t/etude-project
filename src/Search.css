@@ -1,0 +1,41 @@
+.tout{
+  
+}
+.searcha{
+    height:52.89px ;
+    width: 549px;
+    position: absolute;
+    text-align:center ;
+    border: #BDBDBD solid;
+    
+    left:206px ;
+    top: 20px;
+    border-radius: 5%;
+
+}
+.baa{
+    position: relative;
+    background-color: transparent;
+
+  
+    
+}
+/* .bo{
+ position: absolute;
+
+} */
+.bi-search{
+   
+   
+
+width: 53px;
+height:52.89px ;
+
+}
+
+.bi{
+    position: absolute;
+    left:206px ;
+    top: 20px;
+    
+}

@@ -1,0 +1,68 @@
+import React, { useState} from "react/cjs/react.production.min";
+import "./inscrit.css";
+import F from "../image/f.png";
+import FF from "../image/ff.png";
+import FFF from "../image/fff.png";
+
+function Inscrit1 (){
+  
+const[email,setEmail]=useState('');
+const[mdp,setMdp]=useState('');
+  
+ 
+
+  verifemail (e) {
+      setEmail(e.target.value);
+  };
+  verifmdp(e){
+      setMdp(e.target.value);
+  };
+
+
+    return (
+      <div
+        style={{
+          height: "100vh",
+          width: "100vw",
+        }}
+        className="insc "
+        
+      >
+         <div>
+         <img src={F} className=" i"  alt="f" ></img>
+         <div className="pa ">
+          <p className="a" > تسجيل الدخول  في دراسة</p>
+        
+          
+          {/* <img src={Livre} alt="livre" />
+          <img src={Examan} alt="examan" /> */}
+        <div className="paa">
+     
+        <br />
+        <input
+          type="texte"
+          style={{ marginTop: "20px" }}
+          onChange={this.verifemail}
+          placeholder="mail@"
+          
+        />
+        <br />
+        <input
+        value={email}
+          type="texte"
+          style={{ marginTop: "20px" }}
+          onChange={verifmdp}
+          placeholder="mdp"
+        />
+        <br />
+        <button onClick={inscrit} style={{ marginTop: "20px" }}>
+          inscrit
+        </button>
+        </div>
+        </div>
+        </div>
+        <img src={FF} className=" ii"  alt="ff" />
+          <img src={FFF} className="iii"  alt="fff" />
+      </div>
+    );
+  }
