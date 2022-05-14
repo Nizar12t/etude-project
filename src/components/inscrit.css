@@ -13,7 +13,7 @@
 
 }
 .position{
-    position: relative;
+    position: absolute;
     width: 471.99px;
     height: 574px;
    
@@ -45,7 +45,7 @@
             
             }
     .insc {
-      background-image: url(Group.png);
+      background-image: url(../Group.png);
       background-color: rgb(39, 140, 223);;
     
       height: "100vh";

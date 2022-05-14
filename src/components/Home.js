@@ -5,6 +5,7 @@ import "../App.css";
 import Img2 from "../image/img2.png" 
 import Inscrit from "./Inscrit";
 import "./inscrit.css";
+import Avis from "./Avis";
 class Home extends Component {
   render() {
     return (
@@ -25,6 +26,7 @@ class Home extends Component {
           </div>
         </div>
         <Fiche0/>
+        <Avis/>
       </div>
     );
   }

@@ -5,6 +5,9 @@ import FF from "../image/ff.png";
 import FFF from "../image/fff.png";
 import { NavLink } from "react-router-dom";
 
+import { useState, useNavigate } from "react";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+
 
 class Inscrit extends Component {
   constructor(props) {
@@ -34,6 +37,7 @@ class Inscrit extends Component {
   };
 
   render() {
+    
     return (
       <div
         style={{
@@ -75,9 +79,10 @@ class Inscrit extends Component {
           placeholder="mdp"
         />
         <br />
-        <NavLink to="/inscrit1" className="btn aa">
+        <button><NavLink to="/inscrit1" className="btn aa">
         تسجيل الدخول
-            </NavLink>
+            </NavLink></button>
+ 
 {/*         
         <button onClick={this.inscrit} style={{ marginTop: "20px" }}>
           inscrit
@@ -89,7 +94,9 @@ class Inscrit extends Component {
         </div>
         <img src={FF} className=" ii"  alt="ff" />
           <img src={FFF} className="iii"  alt="fff" />
+          
       </div>
+      
     );
   }
 }

@@ -46,9 +46,10 @@ const[mdp,setMdp]=useState('');
          <br />
         <input
           value={mdp}
-           style={{ marginTop: "20px" }}
+           style={{ marginTop: "20px", marginRight:"10px" }}
            onChange={verifmdp}
            placeholder="mdp"
+           
          />
          <br />
          

@@ -1,13 +1,123 @@
 .navbarr{
     width: 100%;
-    height: 800px;
+    height: 622px;
       justify-content: center; 
       align-items: center; 
       display: flex;
-      background-image: url(Group.png);
+      background-image: url(../Group.png);
       background-color: rgb(39, 140, 223);
       position: absolute;
       
       
      
+  }
+
+  .groupe{
+    /* background-color: rgb(229, 135, 12); */
+    position: absolute;
+    height: 401px;
+    width: 1050px;
+    top: 111px;
+    right: 199px;
+  
+  }
+  .groupe1{
+    position: absolute;
+    /* background-color: blue; */
+    Width 
+:126px;
+Height :
+225px;
+right: 0px;
+
+  }
+  
+  .groupe2{
+    position: absolute;
+    right: 159px;
+    /* background-color: red; */
+    Width :
+    192px;
+    Height :
+    300px;
+     
+  }
+  .groupe3{
+    position: absolute;
+    /* background-color: rgb(255, 0, 212); */
+    Width 
+    :195px;
+    Height :
+    266px;
+right: 445.62px;
+  }
+  .groupe4{
+    position: absolute;
+    /* background-color: rgb(5, 0, 0); */
+    Width :300px;
+    
+    Height :192px;
+    
+right: 734.82px;
+  }
+  .p10{
+    position: absolute;
+    font-size: 22px;
+    /* font-style:oblique; */
+    color: rgb(240, 248, 255);
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    
+  
+  }
+  .p11{
+    position: absolute;
+    font-size: 22px;
+    color: aliceblue;
+    
+    
+    margin-top: 39px;
+  }
+  .p12{
+    position: absolute;
+    height: 72px;
+    width: 100%;
+    bottom: 0px;
+    /* background-color: rgb(7, 60, 8); */
+    border-top: 1px solid rgb(247, 244, 244);
+    text-align: right;
+
+  }
+  .sel{
+    position: absolute;
+    width: 93px; 
+    height: 23px;
+    bottom: 16px;
+    left: 10px;
+    border: 0px ;
+    color: aliceblue;
+    border-bottom: 0px  transparent;
+  }
+  .p13{
+    position: absolute;
+    color: aliceblue;
+    bottom:16px;
+    right: 10px;
+    size: 22px;
+ 
+  }
+  .p14{
+  
+    position: absolute;
+    color: aliceblue;
+    bottom:16px;
+    right: 380px;
+    size: 22px;
+  }
+  .p15{
+    position: absolute;
+    color: aliceblue;
+    bottom:16px;
+    right: 709px;
+    size: 22px;
+     right: 
   }

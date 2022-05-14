@@ -4,7 +4,7 @@
     Height :811.18px;
     Top :190px;
    left : 922px;
-    background-color: aqua;
+    /* background-color: aqua; */
     position: absolute;
   
 }
@@ -22,4 +22,30 @@
 }
 .active{
     max-height: 200px;
+}
+.box{
+  
+    position: absolute;
+    top: 30px;
+    right:50px ;
+    /* padding: 100px; */
+}
+.box1{
+    position: relative;
+    top:30px
+}
+.langue{
+    position: absolute;
+    top: 200px;
+    right: 50px
+}
+.anne{
+    position: absolute;
+    top: 100px;
+    right: 50px
+}
+.type{
+    position: absolute;
+    top: 150px;
+    right: 50px
 }

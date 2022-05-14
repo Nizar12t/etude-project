@@ -5,6 +5,7 @@ import "./Navbar.css";
 export default class Navbar extends Component {
   render() {
     return (
+      <div>
       <nav  >
        
          <NavLink
@@ -44,6 +45,9 @@ export default class Navbar extends Component {
         </NavLink>
         
       </nav>
+      
+      </div>
+      
     );
   }
 }

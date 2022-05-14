@@ -119,7 +119,7 @@ top: 45.13px;
     position: absolute; 
  }
 .d{
-    background-image: url(Group.png);
+    background-image: url(../Group.png);
     background-color:#F1F5F9;
     height: 776px;
 }

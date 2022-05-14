@@ -1,15 +1,53 @@
-import { Component } from "react/cjs/react.production.min"
+import "./Page3.css";
+import { Button, ButtonGroup ,Stack} from '@chakra-ui/react'
+import { React, Component } from "react";
 
-class Page3 extends Component{
 
-    render(){
-        return(<div>
-      nom :mokhtar<br/>
-      prenom: Zayene <br/>
+function Page3(){
+
     
-      age: 29<br/>
+        return(
+        <div className="page31">
+          <div className="page32"></div>
+          <div className="page33">
+          <h1 className="h1" >جميع المقالات هنا</h1>
+          <div className="page34">
+            <div className=" page35">
+  
+<Stack direction='row' spacing={7} align='center' >
 
-        </div>)
+  <Button  className="activ" >
+  تاريخ
+  </Button>
+  <Button  className="activ" >
+  علوم
+  </Button>
+  <Button   className="activ">
+  رياضيات
+  </Button>
+  <Button  className="activ">
+  فيزياء
+  </Button>
+  <Button  className="activ" >
+  تصميم
+  </Button>
+  <Button  className="activ">
+  اداب
+  </Button>
+  <p colorScheme='teal' >
+   جميع المسالك
+  </p>
+</Stack>
+
+
+            </div>
+
+          </div>
+          </div>
+ 
+
+        </div>
+        )
     }
-}
+
 export default Page3;
