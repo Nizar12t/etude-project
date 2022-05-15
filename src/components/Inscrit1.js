@@ -1,66 +1,69 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import "./inscrit.css";
-import F from "../image/f.png"
+import F from "../image/f.png";
 import FF from "../image/ff.png";
 import FFF from "../image/fff.png";
+import { useNavigate } from "react-router";
+import { auth } from "../firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
 
-export default function Inscrit1 (){
-  
-const[email,setEmail]=useState('');
-const[mdp,setMdp]=useState('');
-  
- 
+export default function Inscrit1() {
+  // ======== FIREBASE ======== //
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
 
-   function verifemail(e){
-      setEmail(e.target.value);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+
+        navigate("/");
+      })
+      .catch((error) => {
+        setError(true);
+      });
   };
-  function verifmdp(e){
-      setMdp(e.target.value);
-      
-  };
 
+  return (
+    <div
+      style={{
+        height: "100vh",
+        width: "100vw",
+      }}
+      className="insc "
+    >
+      <div className="position">
+        <img src={F} className="photo" alt="fh" />
+        <div className="pa ">
+          <p className="av"> تسجيل الدخول في دراسة</p>
 
-    return (
-     
-      
-      <div
-        style={{
-          height: "100vh",
-          width: "100vw",
-        }}
-         className="insc "> 
-         <div className="position">
-           <img src={F} className="photo" alt="fh"/>
-          <div className="pa ">
-           <p className="av" > تسجيل الدخول  في دراسة</p>
-        
-     
           <br />
-         <input
-           value={email}
-           style={{ marginTop: "20px" }}
-           onChange={verifemail}
-           placeholder="mail@"
-          
-         />
-         <br />
-        <input
-          value={mdp}
-           style={{ marginTop: "20px", marginRight:"10px" }}
-           onChange={verifmdp}
-           placeholder="mdp"
-           
-         />
-         <br />
-         
-      
+          <form onSubmit={handleSubmit}>
+            <input
+              value={email}
+              style={{ marginTop: "20px" }}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="mail@"
+            />
+            <br />
+            <input
+              value={password}
+              style={{ marginTop: "20px", marginRight: "10px" }}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="mdp"
+            />
+            <br />
+            <button className="buttonins"> الدخول</button>
+          </form>
         </div>
-        <button className="buttonins">  الدخول</button>
-        </div>
-       
-         <img src={FF} className=" ii"  alt="ff" />
-          <img src={FFF} className="iii"  alt="fff" /> 
       </div>
-      
-    );
-  }
+      <img src={FF} className=" ii" alt="ff" />
+      <img src={FFF} className="iii" alt="fff" />
+    </div>
+  );
+}

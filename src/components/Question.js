@@ -126,9 +126,11 @@ export default function Question() {
 
       <div className='q4'>
       
-      <Button colorScheme='blue  ' className='button'>أرسل</Button>
-      <Input placeholder='أكتب سؤالك هنا
-'  className='input' />
+      <button colorScheme='blue  ' className='button' >أرسل</button>
+    
+      
+      <input   placeholder='أكتب سؤالك هنا' className='input' />
+     
       </div>
     </div>
   );
