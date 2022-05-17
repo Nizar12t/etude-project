@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Button, Input , ButtonGroup} from '@chakra-ui/react'
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '50%',
@@ -132,6 +133,7 @@ export default function Question() {
       <input   placeholder='أكتب سؤالك هنا' className='input' />
      
       </div>
+      
     </div>
   );
 }

@@ -6,6 +6,7 @@ import Livre from "../image/koutob.png";
 import Pdf from "../image/pdf.png";
 import Pc from "../image/pc.png";
 import { NavLink } from "react-router-dom";
+import Fiche4 from "./Fiche4";
 
 export default class Page2 extends Component{
 
@@ -56,14 +57,14 @@ export default class Page2 extends Component{
                    <div className="c14">
                    <img src={Pc} className="imgg" alt="pc" />
               
-              <p className="ppppp"> تدريب عبر الأنترنات</p>
+              <p className="ppppp"> تخزين البيانات  </p>
                      <p className="pppp">ﺪﻳﺮﺘﺳﻮﻧ سﻛ,ﻢﻳﺎﻨﻴﻓ ﻢﻴﻨﻴﻣ دأ ﻢﻴﻧا تﻮﻳ . اﻮﻴﻜﻴﻟأ دأ ﻢﻴﻧا تﻮﻳ . اﻮﻴﻜﻴﻟأ<br/>
                       ﺎﻨﺟﺎﻣ رﺎﻟود تا يرﻮﺑﺎﻟ تﻮﻴﺘﻧﻮﻳ دأ ﻢﻴﻧا تﻮﻳ . اﻮﻴﻜﻴﻟأﺪﻳﺪﻳﺎﻜﻧأ<br/> 
                       ﻮﺒﻤﻴﺗ دﻮﻤﺳﻮﻳأ وﺪﺘﻴﺳ,ﺖﻳﺎﻴﻟأ ﺞﻨﻴﻜﺴﻳ ﺎﺒﻳادأ 
                     </p>
                     <NavLink
                    className= "nn"
-                   to={"/fiche3"}>إستكشف
+                   to={"/fiche4"}>إستكشف
                 </NavLink>
                  </div>
                  

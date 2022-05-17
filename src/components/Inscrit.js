@@ -1,4 +1,5 @@
 import "./inscrit.css";
+import Etape1 from "./Etape1";
 import F from "../image/f.png";
 import FF from "../image/ff.png";
 import FFF from "../image/fff.png";
@@ -18,7 +19,7 @@ export default function Inscrit1() {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       updateProfile(auth.currentUser, { displayName: name });
-      navigate("/");
+      navigate("/etape1");
     } catch (error) {
       toast(error.code, { type: "error" });
     }
@@ -36,8 +37,8 @@ export default function Inscrit1() {
         <img src={F} className="photo" alt="fh" />
         <div className="pa ">
           <p className="a">إنشاء</p>
-          <p className="a">حساب جديد</p>
-          <p className="a">في دراسة</p>
+          <p className="a1">حساب جديد</p>
+          <p className="a2">في دراسة</p>
 
           {/* <img src={Livre} alt="livre" />
           <img src={Examan} alt="examan" /> */}
@@ -46,35 +47,41 @@ export default function Inscrit1() {
             <input
               value={name}
               type="texte"
-              style={{ marginTop: "20px" }}
+              // style={{ marginTop: "140px" }}
               onChange={(e) => {
                 setName(e.target.value);
               }}
               placeholder=" name"
+              className="input1"
+
             />
             <br />
             <input
               value={email}
               type="texte"
-              style={{ marginTop: "20px" }}
+              // style={{ marginTop: "140px" }}
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
               placeholder="mail@"
+              className="input2"
+
             />
             <br />
             <input
               value={password}
               type="texte"
-              style={{ marginTop: "20px" }}
+              // style={{ marginTop: "20px" }}
               onChange={(e) => {
                 setPassword(e.target.value);
               }}
               placeholder="mdp"
+              className="input3"
             />
             <br />
             <button 
-            onClick={handleSignup}> 
+            onClick={handleSignup}
+            className="button4"> 
               تسجيل الدخول
               </button>
             {/*         

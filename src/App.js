@@ -12,6 +12,10 @@ import Page3 from "./components/Page3";
 import Fiche1 from "./components/Fiche1";
 import Fiche2 from "./components/Fiche2";
 import Fiche3 from "./components/Fiche3";
+import Fiche4 from "./components/Fiche4";
+import Etape1 from "./components/Etape1";
+import Etape2 from "./components/Etape2";
+
 import { ChakraProvider } from "@chakra-ui/react";
 import Kousousiyat from "./components/Kousousiyat";
 import Question from "./components/Question";
@@ -33,9 +37,14 @@ class App extends Component {
             <Route exact path="/fiche1" element={<Fiche1 />} />
             <Route exact path="/fiche2" element={<Fiche2 />} />
             <Route exact path="/fiche3" element={<Fiche3 />} />
+            <Route exact path="/fiche4" element={<Fiche4 />} />
+
             <Route exact path="/inscrit1" element={<Inscrit1 />} />
             <Route exact path="/kousousiyat" element={<Kousousiyat />} />
             <Route exact path="/Question" element={<Question/>} />
+            <Route exact path="/etape1" element={<Etape1/>}/>
+            <Route exact path="/etape2" element={<Etape2/>}/>
+
 
 
           </Routes>

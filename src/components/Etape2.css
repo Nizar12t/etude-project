@@ -1,0 +1,187 @@
+.etape21{
+    position: relative;
+    height: 904px;
+    width: 1441px;
+    /* background-color: aquamarine; */
+    }
+    .etape22{
+        position: absolute;
+        height: 904px;
+        width:891px ;
+        left: 0px;
+        background-image: url(../image/Groupn.png);
+        background-color: #fffdfddd;
+    }
+    .etape23{
+        position: absolute;
+        height: 904px;
+        width:550px ;
+        right: 0px;
+        background-image: url(../Group.png);
+        background-color: #148EC6;
+    }
+    .etape211{
+        position: absolute;
+        Width:475px;
+        Height:249px;
+        Top:329px;
+        Left:200px;
+    /* background-color: aqua; */
+    }
+    .etape122{
+        position: absolute;
+        font-size: 40px;
+       left: 5px;
+        color: #12A8DA;
+    }
+    .button12{
+        Width:178px;
+        Height:64px;
+        border-radius:8px;
+        background-color: #12A8DA;
+        bottom:  0px;
+        position: absolute;
+        color:#ffffff ;
+        font-size: 40px ;
+        text-align: center;
+        /* border-color: #683fe2; */
+        border: #12A8DA solid ;
+     
+     }
+     .button13{
+        Width:178px;
+        Height:64px;
+        border-radius:8px;
+        background-color: #12A8DA;
+        bottom:  96px;
+        position: absolute;
+        color:#ffffff ;
+        font-size: 40px ;
+        text-align: center;
+        /* border-color: #683fe2; */
+        border: #12A8DA solid ;
+     
+     }
+     .cm{
+        position: absolute;
+        height: 42px;
+        width: 30px;
+        top:30px;
+        right: 120px;
+        /* background-color:firebrick; */
+        /* color: black; */
+    
+    }
+    .inputt{
+        position: absolute;
+        top:18px;
+        height:49px ;
+        width: 199px;
+        border: #12A8DA solid ;
+
+        
+
+        text-align: right;
+
+
+    }
+    .inputt1{
+        position: absolute;
+        bottom: 87px;
+        height:49px ;
+        width: 199px;
+    border: #12A8DA solid ;
+    text-align: right;
+
+    }
+    .inputt2{
+        position: absolute;
+        bottom: 0px;
+        height:49px ;
+        width: 199px;
+    text-align: right;
+    border: #12A8DA solid ;
+
+    }
+    .col111{
+        position: absolute;
+        width: 199px;
+        Height:239px;
+        
+
+        left: 0px;
+        top: 10px;
+    }
+    .col222{
+        position: absolute;
+        width: 199px;
+        right: 0px;
+        bottom: 0px;
+        Height:239px;
+        
+
+
+    }
+    .button44{
+        position: absolute;
+        width: 163px;
+        height: 41px;
+        left: 356px;
+        
+        border-radius:15px;
+        background-color: #12A8DA;
+        /* bottom:  196px; */
+        
+        color:#ffffff ;
+        font-size: 22px ;
+        text-align: center;
+        /* border-color: #683fe2; */
+        border: #12A8DA solid ;
+        mix-blend-mode:multiply;
+        
+    }
+    .im11{
+        position: absolute;
+        left: 392px;
+        top: 166px;
+    }
+    .colorcm{
+    position: absolute;
+
+    width: 32.8px;
+    height: 46.78px;
+    right: 180px;
+    top: 46px;
+     }
+     .etape27{
+        position: absolute;
+        width: 259px;
+        height: 218px;
+        right: 183px;
+        top: 343px;
+        /* background-color: aquamarine; */
+     }
+     .po1{
+        position: absolute;
+        width: 54px;
+        height: 54px;
+        right: 0px;
+        border-radius:100%;
+
+        background-color: #12A8DA;
+        
+     }
+     .p7{
+        position: absolute;
+        width: 199px;
+        height: 34px;
+       color: #ffffff;
+        
+        
+        font-family: 'Tajawal';
+ 
+        font-size: 28px;
+        /* line-height: 34px; */
+     }
+
+ 

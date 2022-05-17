@@ -49,6 +49,7 @@ export default function Inscrit1() {
               style={{ marginTop: "20px" }}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="mail@"
+              className="input4"
             />
             <br />
             <input
@@ -56,6 +57,7 @@ export default function Inscrit1() {
               style={{ marginTop: "20px", marginRight: "10px" }}
               onChange={(e) => setPassword(e.target.value)}
               placeholder="mdp"
+              className="input5"
             />
             <br />
             <button className="buttonins"> الدخول</button>

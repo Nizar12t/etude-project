@@ -1,0 +1,44 @@
+.button3{
+    Width:249px;
+    Height:49.97px;
+    border-radius: 15px;
+    background-color: #1057ae;
+    bottom:  0px;
+    position: relative;
+    color:#ffffff ;
+    /* border-color: #683fe2; */
+    border: #1057ae solid ;
+ 
+ }
+ .img2{
+    width: 40%;
+    height: 80%;
+    margin-top: 0px;
+    position: relative;
+    left: 220px;
+    top: 60px;
+    float: left;
+    /* padding-top: 115px; */
+    /* padding-left:30vh; */
+    
+    }
+    .aa {
+        color:aliceblue;
+        font-size: 50px;
+        margin-top: 0px;
+        position: relative;
+        top: 30%;
+        right:  100px;
+       
+        text-align:right;
+      }
+      .img1 {
+        background-image: url(../Group.png);
+        background-color: rgb(39, 140, 223);
+        
+        margin-top: 0px;
+        scroll-padding-top: 0%;
+        height: "100%";
+        width: "100%";
+        resize: cover;
+      }
