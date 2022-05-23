@@ -1,4 +1,5 @@
 
+import { color } from "@chakra-ui/react";
 import { Container, Grid } from "@material-ui/core";
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import React, { useState, useEffect } from "react";
@@ -7,11 +8,11 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import { auth, db } from "../../firebase";
 
-export default function Chapitres() {
+export default function Livres() {
   const [articles, setArticles] = useState([]);
   const [user] = useAuthState(auth);
   useEffect(() => {
-    const articleRef = collection(db, "Chapitres");
+    const articleRef = collection(db, "Livres");
     const q = query(articleRef, orderBy("createdAt", "desc"));
     onSnapshot(q, (snapshot) => {
       const articles = snapshot.docs.map((doc) => ({
@@ -41,17 +42,15 @@ export default function Chapitres() {
               likes,
               comments,
             }) => (
-              <Grid item xs={12} sm={6} md={4}>
-                <div style={{backgroundColor: "rgb(216, 222, 225)", borderRadius:"5px"}} className="border mt-3 p-3 bg-light" key={id}>
-                  <div  
-                  className="row">
+              <Grid   item xs={12} sm={6} md={4}>
+                <div className="border mt-3 p-3 bg-light" key={id}>
+                  <div style={{backgroundColor: "rgb(216, 222, 225)", borderRadius:"5px"}} className="row">
                     <div className="col-3">
-                      <Link to={`/Chapitres/${id}`}>
-                        <img
+                      <Link to={`/Livre/${id}`}>
+                        <img 
                           src={imageUrl}
                           alt="title"
-                          style={{ height: 180, width: 180 }}
-                          className="img-chapitres"
+                          style={{ height: 200, width: 200 }}
                         />
                       </Link>
                     </div>

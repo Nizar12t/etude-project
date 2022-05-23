@@ -128,27 +128,22 @@ letter-spacing: 0.022em;
 color: #19191D;
 }
 .fiche2bpa{
-    position: absolute;
-width: 71px;
-height: 24px;
-
-
-font-family: 'Tajawal';
+  font-size: 36px;
+  border-radius: 15px;
+  background-color: #1057ae;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 40px;
+  min-width: 20px;
+  top:  -10px;
+  left: 475px;
+  
  
+  position: relative;
+  color:#ffffff ;
+  border: none;
+  transition: all 0.4s ease-in-out;
 
-font-size: 16px;
-
-/* identical to box height, or 150% */
-
-/* display: flex; */
-/* align-items: flex-end; */
-letter-spacing: 0.44px;
-background-color: #F1F5F9;
-border-radius: 100px;
-text-align: center;
-
-
-color: #148EC6;
 
 }
 .novo1{

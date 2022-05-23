@@ -3,14 +3,15 @@ import React, { useState } from "react";
 
 import { Timestamp, collection, addDoc } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import "./Addchapitre.css";
+import "./Addlivre.css";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 import { auth, db, storage } from "../../firebase";
 import { Link, NavLink } from "react-router-dom";
 import oui from "../../image/fff.png";
+import livre from "../../image/koutob.png";
 
-export default function Addchapitre() {
+export default function Addlivre() {
   const [user] = useAuthState(auth);
   const [formData, setFormData] = useState({
     title: "",
@@ -37,7 +38,7 @@ export default function Addchapitre() {
 
     const storageRef = ref(
       storage,
-      `/images/${Date.now()}${formData.image.name}`
+      `/images-livre/${Date.now()}${formData.image.name}`
     );
 
     const uploadImage = uploadBytesResumable(storageRef, formData.image);
@@ -61,7 +62,7 @@ export default function Addchapitre() {
         });
 
         getDownloadURL(uploadImage.snapshot.ref).then((url) => {
-          const articleRef = collection(db, "Chapitres");
+          const articleRef = collection(db, "Livres");
           addDoc(articleRef, {
             title: formData.title,
             description: formData.description,
@@ -86,11 +87,10 @@ export default function Addchapitre() {
         </>
       ) : (
         <>
-        
-        <div   className="form-g">
-        <img src={ oui }  className="image-iy" alt="ffffff" />
+        <div className="form-g">
+        <img src={ livre } className="image-im" alt="ffffff" />
          <div className="form-g1">
-          <h2 className="nouv-chapitre">Create chapitre</h2>
+          <h2 className="nouv-chapitre">Add book</h2>
           <div className="form-group">
             <div htmlFor="" className="form-title">Title</div>
             <input
@@ -132,7 +132,7 @@ export default function Addchapitre() {
             </div>
           )}
           <NavLink
-          to="/fiche4"><button
+          to="/fiche2"><button
             className="form-boutton"
             onClick={handlePublish}
           >

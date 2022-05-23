@@ -3,14 +3,14 @@ import React, { useState } from "react";
 
 import { Timestamp, collection, addDoc } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import "./Addchapitre.css";
+import "./Addarticle.css";
 import { useAuthState } from "react-firebase-hooks/auth";
 
 import { auth, db, storage } from "../../firebase";
 import { Link, NavLink } from "react-router-dom";
 import oui from "../../image/fff.png";
 
-export default function Addchapitre() {
+export default function Addarticle() {
   const [user] = useAuthState(auth);
   const [formData, setFormData] = useState({
     title: "",
@@ -132,7 +132,7 @@ export default function Addchapitre() {
             </div>
           )}
           <NavLink
-          to="/fiche4"><button
+          to="/page3"><button
             className="form-boutton"
             onClick={handlePublish}
           >

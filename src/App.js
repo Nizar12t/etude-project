@@ -21,6 +21,9 @@ import { ChakraProvider } from "@chakra-ui/react";
 import Kousousiyat from "./components/Kousousiyat";
 import Question from "./components/Question";
 import Addchapitre from "./components/Chapitre/Addchapitre";
+import Addlivre from "./components/livre/Addlivre";
+import Addarticle from "./components/article/Addarticle";
+import Chapitre from "./components/Chapitre/Chapitre";
 
 function App() {
 
@@ -47,6 +50,12 @@ function App() {
           <Route exact path="/etape2" element={<Etape2 />} />
           <Route exact path="/etape3" element={<Etape3 />} />
           <Route exact path="/addchapitre" element={<Addchapitre />} />
+          <Route exact path="/addlivre" element={<Addlivre />} />
+          <Route exact path="/addarticle" element={<Addarticle />} />
+          <Route exact path="/chapitres/:id" element={<Chapitre/>} />
+
+
+
 
         </Routes>
         <Navbar2 />

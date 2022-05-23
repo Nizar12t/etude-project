@@ -7,11 +7,11 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import { auth, db } from "../../firebase";
 
-export default function Chapitres() {
+export default function Articles() {
   const [articles, setArticles] = useState([]);
   const [user] = useAuthState(auth);
   useEffect(() => {
-    const articleRef = collection(db, "Chapitres");
+    const articleRef = collection(db, "Articles");
     const q = query(articleRef, orderBy("createdAt", "desc"));
     onSnapshot(q, (snapshot) => {
       const articles = snapshot.docs.map((doc) => ({
@@ -25,7 +25,7 @@ export default function Chapitres() {
   return (
    
     <Container>
-      <Grid container spacing={1}>
+      <Grid container spacing={3}>
         {articles.length === 0 ? (
           <p>No chapitre found!</p>
         ) : (
@@ -42,16 +42,14 @@ export default function Chapitres() {
               comments,
             }) => (
               <Grid item xs={12} sm={6} md={4}>
-                <div style={{backgroundColor: "rgb(216, 222, 225)", borderRadius:"5px"}} className="border mt-3 p-3 bg-light" key={id}>
-                  <div  
-                  className="row">
+                <div className="border mt-3 p-3 bg-light" key={id}>
+                  <div className="row">
                     <div className="col-3">
-                      <Link to={`/Chapitres/${id}`}>
+                      <Link to={`/Article/${id}`}>
                         <img
                           src={imageUrl}
                           alt="title"
                           style={{ height: 180, width: 180 }}
-                          className="img-chapitres"
                         />
                       </Link>
                     </div>

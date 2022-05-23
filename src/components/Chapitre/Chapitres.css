@@ -1,0 +1,7 @@
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.img-chapitres{
+     object-fit: cover;
+}

@@ -1,6 +1,8 @@
 import "./Page3.css";
 import { Button, ButtonGroup ,Stack} from '@chakra-ui/react'
 import { React, Component } from "react";
+import { NavLink } from "react-router-dom";
+import Articles from "./article/Articles";
 
 
 function Page3(){
@@ -31,9 +33,11 @@ function Page3(){
   <Button  className="activ" >
   تصميم
   </Button>
+  <NavLink to="/Addarticle">
   <Button  className="activ">
   اداب
   </Button>
+  </NavLink>
   <p colorScheme='teal' >
    جميع المسالك
   </p>
@@ -43,6 +47,9 @@ function Page3(){
             </div>
 
           </div>
+          </div>
+          <div>
+            <Articles/>
           </div>
  
 

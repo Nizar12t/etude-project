@@ -101,13 +101,13 @@ top: 248px;
   .form-boutton:hover{
     background-color: #185C77;;
   }
-  .image-iy{
-    width: 10%;
-    height: 30%;
+  .image-im{
+    width: 15%;
+    height: 60%;
     margin-top: 0px;
     position: relative;
-    left: 740px;
-    top: 200px;
+    left: 750px;
+    top: 70px;
     float: left;
     object-fit: contain;
     /* padding-top: 115px; */

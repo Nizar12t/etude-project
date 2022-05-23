@@ -43,7 +43,7 @@ function Navbar() {
         </NavLink>
         <NavLink
           className={({ isActive }) => (isActive ? "jj active" : "jj items ")}
-          to={"/page1"}
+          to={"/page3"}
         >
           مقالات
         </NavLink>
@@ -54,12 +54,12 @@ function Navbar() {
           الخدمات
         </NavLink>
 
-        <NavLink
+        {/* <NavLink
           className={({ isActive }) => (isActive ? "jj active" : "jj items ")}
-          to={"/page3"}
+          to={"/page1"}
         >
           اللغة
-        </NavLink>
+        </NavLink> */}
       </nav>
     </div>
   ) : null;
