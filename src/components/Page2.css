@@ -1,6 +1,8 @@
 .az
 {
+   position: absolute;
     background-color: #F1F5F9;
+    /* top: 80px; */
     height: 91px;
     width: 1440px;
 
@@ -173,4 +175,16 @@ color: #F1F5F9;
    /* font-size: 25px; */
 
 }
+.ia{
+   position: relative;
+ width: 1440px;
+ height: 1865px;
+ }
+ .ma1{
+   
+    top: 80px;
+    position: relative;
+width: 1440px;
+height: 1865px;
+ }
 

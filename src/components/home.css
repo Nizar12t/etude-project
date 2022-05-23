@@ -11,13 +11,14 @@
  
  }
  .img2{
-    width: 40%;
+    width: 50%;
     height: 80%;
     margin-top: 0px;
     position: relative;
     left: 220px;
     top: 60px;
     float: left;
+    object-fit: contain;
     /* padding-top: 115px; */
     /* padding-left:30vh; */
     
@@ -41,4 +42,24 @@
         height: "100%";
         width: "100%";
         resize: cover;
+      }
+
+
+
+      .home-btn{
+        font-size: 36px;
+        border-radius: 15px;
+        background-color: #1057ae;
+        padding-left: 15px;
+        padding-right: 15px;
+        min-height: 40px;
+        min-width: 200px;
+        bottom:  0px;
+        position: relative;
+        color:#ffffff ;
+        border: none;
+        transition: all 0.4s ease-in-out;
+      }
+      .home-btn:hover{
+        background-color: #161058;
       }

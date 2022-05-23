@@ -9,7 +9,7 @@ width: 1441px;
     height: 904px;
     width:891px ;
     left: 0px;
-    background-image: url(../image/Groupn.png);
+    background-image: url(../../../image/Groupn.png);
     background-color: #fffdfddd;
 }
 .etape13{
@@ -17,7 +17,7 @@ width: 1441px;
     height: 904px;
     width:550px ;
     right: 0px;
-    background-image: url(../Group.png);
+    background-image: url(../../../Group.png);
     background-color: #148EC6;
 }
 .etape121{
@@ -29,9 +29,7 @@ Left:356px;
 /* background-color: aqua; */
 }
 .etape122{
-    position: absolute;
     font-size: 40px;
-   left: 5px;
     color: #12A8DA;
 }
 .button12{

@@ -6,7 +6,7 @@ import Livre from "../image/koutob.png";
 import Pdf from "../image/pdf.png";
 import Pc from "../image/pc.png";
 import { NavLink } from "react-router-dom";
-import Fiche4 from "./Fiche4";
+import Fiche4 from "./fiche/Fiche4";
 
 export default class Page2 extends Component{
 
@@ -15,7 +15,8 @@ export default class Page2 extends Component{
 
   
   return(
- <div>
+   //   <div className="ma1">
+ <div className="ia">
  <div className="az">
     <p className="b">خدمات موقع دراسة</p>
  </div>
@@ -87,9 +88,10 @@ export default class Page2 extends Component{
     <NavLink to="/inscrit" >   
        <button className="button2">حساب جديد</button>
        </NavLink>
- </div>
+ {/* </div> */}
  </div>
 
+</div>
 </div>
 
 

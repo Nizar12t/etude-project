@@ -1,5 +1,5 @@
 import "./inscrit.css";
-import Etape1 from "./Etape1";
+import Etape1 from "./etapeInscrit/etape1/Etape1";
 import F from "../image/f.png";
 import FF from "../image/ff.png";
 import FFF from "../image/fff.png";

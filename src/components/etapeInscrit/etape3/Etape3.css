@@ -1,0 +1,172 @@
+.etape11 {
+  position: relative;
+  height: 904px;
+  width: 1441px;
+  /* background-color: aquamarine; */
+}
+.etape12 {
+  position: absolute;
+  height: 904px;
+  width: 891px;
+  left: 0px;
+  background-image: url(../../../image/Groupn.png);
+  background-color: #fffdfddd;
+}
+.etape13 {
+  position: absolute;
+  height: 904px;
+  width: 550px;
+  right: 0px;
+  background-image: url(../../../Group.png);
+  background-color: #148ec6;
+}
+.etape121 {
+  position: absolute;
+  width: 178px;
+  height: 229px;
+  top: 336px;
+  left: 356px;
+  /* background-color: aqua; */
+}
+.etape122 {
+  font-size: 40px;
+  color: #12a8da;
+  width: auto;
+  text-align: right;
+  min-width: 200px;
+}
+.button12 {
+  width: 178px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: #12a8da;
+  bottom: 0px;
+  position: absolute;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  /* border-color: #683fe2; */
+  border: #12a8da solid;
+}
+.button13 {
+  width: 178px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: #12a8da;
+  bottom: 96px;
+  position: absolute;
+  color: #ffffff;
+  font-size: 40px;
+  text-align: center;
+  /* border-color: #683fe2; */
+  border: #12a8da solid;
+}
+.cm {
+  position: absolute;
+  height: 42px;
+  width: 30px;
+  top: 30px;
+  right: 120px;
+  /* background-color:firebrick; */
+  /* color: black; */
+}
+.colorcp {
+  position: absolute;
+
+  width: 32.8px;
+  height: 46.78px;
+  right: 180px;
+  top: 46px;
+}
+.etape288 {
+  position: absolute;
+  width: 259px;
+  height: 218px;
+  right: 183px;
+  top: 343px;
+  /* background-color: aquamarine; */
+}
+
+.po5 {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  right: 0px;
+  border-radius: 100%;
+  background-color: #12A8DA;
+}
+.p8 {
+  position: absolute;
+  width: 199px;
+  height: 34px;
+  color: #ffffff;
+
+  font-family: "Tajawal";
+
+  font-size: 28px;
+  /* line-height: 34px; */
+}
+.et3 {
+  position: absolute;
+  /* background-color: antiquewhite; */
+  position: absolute;
+  width: 363px;
+  height: 271px;
+  left: 259px;
+  top: 320px;
+}
+.nt{
+    position: absolute;
+    background-color: #12a8da;
+    width: 68px;
+    height: 68px;
+    top:0px ;
+    left:155px ;
+    border-radius:100%;
+    color: #FFFDFD;
+ 
+}
+.nt1{
+    position: absolute;
+width: 82px;
+height: 47px;
+left: 145px;
+top: 90px;
+
+font-family: 'Tajawal';
+font-style: normal;
+font-weight: 500;
+font-size: 43px;
+line-height: 40px;
+text-align: center;
+
+color: #12A8DA;
+
+
+}
+.nt2{
+    position: absolute;
+width: 363px;
+height: 79px;
+top: 149px;
+font-family: 'Tajawal';
+font-style: normal;
+font-weight: 300;
+font-size: 28px;
+line-height: 34px;
+text-align: center;
+
+color: #12A8DA;
+}
+.nt3{
+    position: absolute;
+width: 163px;
+height: 41px;
+bottom: 0px;
+left: 100px;
+background-color: #12a8da;
+border-radius: 15px;
+color: #ffffff;
+
+font-size:  22px;
+}

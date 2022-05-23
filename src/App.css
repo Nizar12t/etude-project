@@ -4,6 +4,9 @@ body{
   padding: 0;
 }
 
+*{
+  font-family: 'Cairo', sans-serif;
+}
 
 .img1 {
   background-image: url(Group.png);
@@ -127,3 +130,15 @@ a {
   
 
 } */
+input{
+  padding-left: 10px;
+}
+input::placeholder{
+  padding-left: 10px;
+}
+h3{
+  font-size: 30px !important;
+}
+h4{
+  font-size: 25px !important;
+}

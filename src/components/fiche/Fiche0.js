@@ -1,13 +1,13 @@
 
 import { Component } from "react/cjs/react.production.min";
 import { NavLink } from "react-router-dom";
-import Tadrib from "../image/tadrib.png";
+import Tadrib from "../../image/tadrib.png";
 // import Livre from "../image/koutob.png";
-import Pdf from "../image/pdf.png";
-import Livre from "../image/livre.png";
-import Examen from "../image/examen.png";
-import Stockage from "../image/stockage.png";
-import Formation from "../image/formation.png";
+import Pdf from "../../image/pdf.png";
+import Livre from "../../image/livre.png";
+import Examen from "../../image/examen.png";
+import Stockage from "../../image/stockage.png";
+import Formation from "../../image/formation.png";
 import "./fiche0.css";
 // import { Button } from '@chakra-ui/react'
 // import { Image } from '@chakra-ui/react'

@@ -13,13 +13,15 @@
 
 }
 .position{
-    position: absolute;
+    position: relative;
+    top: 100px;
     width: 471.99px;
     height: 574px;
+    left: -20px;
    
     border-color: beige;
-    left:  456px  ;
-    top: 116px;
+    margin:auto;
+    padding-top: 20px;
     
 
 
@@ -168,3 +170,11 @@ color: #F1F5F9;
 
 }
     /*  */
+
+
+    .container{
+        width: 400px;
+        height: auto;
+        min-height: 400px;
+        background: yellow;
+    }

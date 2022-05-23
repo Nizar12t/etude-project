@@ -21,7 +21,7 @@
       height: 62.02;
       font-size:21px;
 Line-height:31px;
-color: #D9D1D1;
+color: #6d6d6d;
 position: relative;
 left: 170px;
 /* top: 10px;  */
@@ -55,6 +55,11 @@ align-items: center;
   position: relative;
   left: 90px;
   
+   }
+   .colorb:hover{
+     transition: all 0.3s ease-in-out;
+     opacity: .7;
+     cursor: pointer;
    }
    .colord{
      font-size: 25px;
