@@ -10,13 +10,19 @@ function Page3(){
     
         return(
         <div className="page31">
-          <div className="page32"></div>
+          <div className="page32">
+  <h1 className="h123" >جميع المقالات هنا</h1></div>
           <div className="page33">
-          <h1 className="h1" >جميع المقالات هنا</h1>
+          <NavLink to="/Addarticle">
+  <Button  className="wx">
+  addarticle
+  </Button>
+  </NavLink>
+          
           <div className="page34">
             <div className=" page35">
   
-<Stack direction='row' spacing={7} align='center' >
+{/* <Stack direction='row' spacing={7} align='center' >
 
   <Button  className="activ" >
   تاريخ
@@ -41,16 +47,18 @@ function Page3(){
   <p colorScheme='teal' >
    جميع المسالك
   </p>
-</Stack>
+</Stack> */}
 
 
             </div>
-
-          </div>
-          </div>
-          <div>
+            <div className="poArticle">
             <Articles/>
           </div>
+
+          </div>
+         
+          </div>
+         
  
 
         </div>

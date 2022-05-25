@@ -88,7 +88,7 @@ export default function Addlivre() {
       ) : (
         <>
         <div className="form-g">
-        <img src={ livre } className="image-im" alt="ffffff" />
+        <img src={ livre } className="imageon" alt="ffffff" />
          <div className="form-g1">
           <h2 className="nouv-chapitre">Add book</h2>
           <div className="form-group">

@@ -24,6 +24,9 @@ import Addchapitre from "./components/Chapitre/Addchapitre";
 import Addlivre from "./components/livre/Addlivre";
 import Addarticle from "./components/article/Addarticle";
 import Chapitre from "./components/Chapitre/Chapitre";
+import Livre from "./components/livre/livre";
+import Articles from "./components/article/Articles";
+import ResponsiveDialog from "./components/ResponsiveDialog";
 
 function App() {
 
@@ -53,8 +56,13 @@ function App() {
           <Route exact path="/addlivre" element={<Addlivre />} />
           <Route exact path="/addarticle" element={<Addarticle />} />
           <Route exact path="/chapitres/:id" element={<Chapitre/>} />
+          <Route exact path="/livre/:id" element={<Livre/>} />
+          <Route exact path="/article/:id" element={<Articles/>} />
 
-
+          
+          <Route exact path="/responsiveDialog" element={<ResponsiveDialog />} />
+          
+          
 
 
         </Routes>

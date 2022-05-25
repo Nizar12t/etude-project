@@ -22,7 +22,7 @@ export default function Inscrit1() {
         // Signed in
         const user = userCredential.user;
 
-        navigate("/etape1");
+        navigate("/");
       })
       .catch((error) => {
         setError(true);

@@ -78,12 +78,12 @@ export default function Addchapitre() {
   return (
     <div >
       {!user ? (
-        <>
+        <div class >
           <h2>
             <Link to="/">Login to create article</Link>
           </h2>
           Don't have an account? <Link to="/inscrit1">Signup</Link>
-        </>
+        </div>
       ) : (
         <>
         

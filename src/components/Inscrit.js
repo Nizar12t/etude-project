@@ -19,7 +19,7 @@ export default function Inscrit1() {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       updateProfile(auth.currentUser, { displayName: name });
-      navigate("/etape1");
+      navigate("etape1");
     } catch (error) {
       toast(error.code, { type: "error" });
     }

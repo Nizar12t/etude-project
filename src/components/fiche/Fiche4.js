@@ -7,7 +7,7 @@ export default function Fiche4(){
 
 
   return(
-    <div>
+    <div className="fIche4css">
     <div className="fichea">
       <Search/>
       </div>

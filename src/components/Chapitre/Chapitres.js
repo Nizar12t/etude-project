@@ -50,7 +50,7 @@ export default function Chapitres() {
                         <img
                           src={imageUrl}
                           alt="title"
-                          style={{ height: 180, width: 180 }}
+                          style={{ height: 300, width: 300 }}
                           className="img-chapitres"
                         />
                       </Link>

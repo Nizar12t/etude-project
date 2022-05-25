@@ -7,11 +7,15 @@ import Pdf from "../image/pdf.png";
 import Pc from "../image/pc.png";
 import { NavLink } from "react-router-dom";
 import Fiche4 from "./fiche/Fiche4";
+import ResponsiveDialog from "./ResponsiveDialog";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "../firebase";
 
-export default class Page2 extends Component{
+export default function Page2() {
 
 
-  render(){
+   const [user] = useAuthState(auth);
+  
 
   
   return(
@@ -28,10 +32,24 @@ export default class Page2 extends Component{
                      <p className="pppp">ﺪﻳﺮﺘﺳﻮﻧ سﻛ,ﻢﻳﺎﻨﻴﻓ ﻢﻴﻨﻴﻣ دأ ﻢﻴﻧا تﻮﻳ . اﻮﻴﻜﻴﻟأ دأ ﻢﻴﻧا تﻮﻳ . اﻮﻴﻜﻴﻟأ<br/>
                       ﺎﻨﺟﺎﻣ رﺎﻟود تا يرﻮﺑﺎﻟ تﻮﻴﺘﻧﻮﻳ دأ ﻢﻴﻧا تﻮﻳ . اﻮﻴﻜﻴﻟأﺪﻳﺪﻳﺎﻜﻧأ<br/> 
                       ﻮﺒﻤﻴﺗ دﻮﻤﺳﻮﻳأ وﺪﺘﻴﺳ,ﺖﻳﺎﻴﻟأ ﺞﻨﻴﻜﺴﻳ ﺎﺒﻳادأ 
-                    </p>  <NavLink
+                    </p> 
+                    {user && (  
+                     <NavLink
                    className= "nn"
                    to={"/fiche1"}>إستكشف
-                </NavLink></div>
+                </NavLink>
+                )}
+                    {!user && (  
+                          <div style={{    position: "absolute",
+                          left: "224px" ,
+                          bottom: "64.81px"}}>
+                
+                <ResponsiveDialog/>
+                </div>
+
+                )}
+
+                </div>
                    <div className="c12">
 
                    <img src={Livre} className="imgg" alt="livre" />
@@ -39,10 +57,21 @@ export default class Page2 extends Component{
                    <p className="pppp">ﺪﻳﺮﺘﺳﻮﻧ سﻛ,ﻢﻳﺎﻨﻴﻓ ﻢﻴﻨﻴﻣ دأ ﻢﻴﻧا تﻮﻳ . اﻮﻴﻜﻴﻟأ دأ ﻢﻴﻧا تﻮﻳ . اﻮﻴﻜﻴﻟأ<br/>
                       ﺎﻨﺟﺎﻣ رﺎﻟود تا يرﻮﺑﺎﻟ تﻮﻴﺘﻧﻮﻳ دأ ﻢﻴﻧا تﻮﻳ . اﻮﻴﻜﻴﻟأﺪﻳﺪﻳﺎﻜﻧأ<br/> 
                       ﻮﺒﻤﻴﺗ دﻮﻤﺳﻮﻳأ وﺪﺘﻴﺳ,ﺖﻳﺎﻴﻟأ ﺞﻨﻴﻜﺴﻳ ﺎﺒﻳادأ 
-                    </p>  <NavLink
+                    </p>                 {user && (  
+                     <NavLink
                    className= "nn"
                    to={"/fiche2"}>إستكشف
-                </NavLink></div>
+                </NavLink>
+                )}
+                    {!user && (  
+                          <div style={{    position: "absolute",
+                          left: "224px" ,
+                          bottom: "64.81px"}}>
+                
+                <ResponsiveDialog/>
+                </div>
+
+                )}</div>
                    
                    <div className="c13">
                    <img src={Pdf} className="imgg" alt="koutob" />
@@ -50,10 +79,20 @@ export default class Page2 extends Component{
                    <p className="pppp">ﺪﻳﺮﺘﺳﻮﻧ سﻛ,ﻢﻳﺎﻨﻴﻓ ﻢﻴﻨﻴﻣ دأ ﻢﻴﻧا تﻮﻳ . اﻮﻴﻜﻴﻟأ دأ ﻢﻴﻧا تﻮﻳ . اﻮﻴﻜﻴﻟأ<br/>
                       ﺎﻨﺟﺎﻣ رﺎﻟود تا يرﻮﺑﺎﻟ تﻮﻴﺘﻧﻮﻳ دأ ﻢﻴﻧا تﻮﻳ . اﻮﻴﻜﻴﻟأﺪﻳﺪﻳﺎﻜﻧأ<br/> 
                       ﻮﺒﻤﻴﺗ دﻮﻤﺳﻮﻳأ وﺪﺘﻴﺳ,ﺖﻳﺎﻴﻟأ ﺞﻨﻴﻜﺴﻳ ﺎﺒﻳادأ 
-                    </p>  <NavLink
+                    </p>                  {user && (  
+                     <NavLink
                    className= "nn"
                    to={"/fiche3"}>إستكشف
-                </NavLink></div>
+                </NavLink>
+                )}
+                    {!user && (  
+                       <div style={{    position: "absolute",
+                        left: "224px" ,
+                        bottom: "64.81px"}}>
+                
+                <ResponsiveDialog/>
+                </div>
+                )}</div>
 
                    <div className="c14">
                    <img src={Pc} className="imgg" alt="pc" />
@@ -63,10 +102,21 @@ export default class Page2 extends Component{
                       ﺎﻨﺟﺎﻣ رﺎﻟود تا يرﻮﺑﺎﻟ تﻮﻴﺘﻧﻮﻳ دأ ﻢﻴﻧا تﻮﻳ . اﻮﻴﻜﻴﻟأﺪﻳﺪﻳﺎﻜﻧأ<br/> 
                       ﻮﺒﻤﻴﺗ دﻮﻤﺳﻮﻳأ وﺪﺘﻴﺳ,ﺖﻳﺎﻴﻟأ ﺞﻨﻴﻜﺴﻳ ﺎﺒﻳادأ 
                     </p>
-                    <NavLink
+                    {user && (  
+                     <NavLink
                    className= "nn"
                    to={"/fiche4"}>إستكشف
                 </NavLink>
+                )}
+                    {!user && (  
+                          <div style={{    position: "absolute",
+                          left: "224px" ,
+                          bottom: "64.81px"}}>
+                
+                <ResponsiveDialog/>
+                </div>
+
+                )}
                  </div>
                  
 </div>
@@ -96,5 +146,4 @@ export default class Page2 extends Component{
 
 
   )
-}
 }

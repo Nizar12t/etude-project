@@ -4,6 +4,7 @@
 Height :2009px;
 }
 .page32{
+    position: relative;
     background-color: #F1F5F9;
    
 top: 80px;
@@ -11,13 +12,13 @@ top: 80px;
     height: 91px;
 
 }
-.h1{
+.h123{
     font-size: 50px;
     position: relative
     ;
     color: rgb(53, 66, 213);
     text-align: center;
-    top: 220px;
+    bottom: 0px;
    
     
 }
@@ -48,3 +49,30 @@ Height :1009px;
 .activ1{
     background-color: #ffffff;
 }
+.poArticle{
+    position: relative;
+    width: 80%;
+    height: 2000px;
+    left: 200px;
+    
+    background-color: bisque;
+}
+
+.wx{
+    font-size: 36px;
+    border-radius: 15px;
+    background-color: #105fc0;
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: 40px;
+    min-width: 200px;
+    top:  15px;
+    left: 200px;
+    position: relative ;
+    color:#ffffff ;
+    border: none;
+    transition: all 0.4s ease-in-out;
+  }
+  .wx:hover{
+    background-color: #161058;
+  }

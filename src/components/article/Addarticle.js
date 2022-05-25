@@ -61,7 +61,7 @@ export default function Addarticle() {
         });
 
         getDownloadURL(uploadImage.snapshot.ref).then((url) => {
-          const articleRef = collection(db, "Chapitres");
+          const articleRef = collection(db, "Articles");
           addDoc(articleRef, {
             title: formData.title,
             description: formData.description,

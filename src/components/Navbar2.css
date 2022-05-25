@@ -61,13 +61,24 @@ right: 445.62px;
 right: 734.82px;
   }
   .p10{
+   top: 220px;
+   right: 70px;
     position: absolute;
     font-size: 22px;
     /* font-style:oblique; */
     color: rgb(240, 248, 255);
+    border-radius: 5px;
+    width: 120px;
+    height:40px ;
+    background-color: #1057ae;
     /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     
+ 
+ 
   
+  }
+  .p10:hover{
+    background-color: #161058;
   }
   .p11{
     position: absolute;
@@ -120,4 +131,19 @@ right: 734.82px;
     right: 709px;
     size: 22px;
      right: 
+  }
+  .papercss{
+    position: absolute;
+    top: 10px;
+    width: 268px;
+    height: 380px;
+ background-image: url(../image/wasim.png);
+ /* border-radius: 100%; */
+
+  }
+  .paperccs{
+    position: absolute;
+    top: 100px;
+    width: 850px;
+    height: 380px;
   }
