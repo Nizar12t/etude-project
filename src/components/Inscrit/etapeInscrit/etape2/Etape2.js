@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Input } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
-import Logo from "../../../image/Grr.png";
-import Po from "../../../image/po.png";
+import Logo from "../../../../image/Grr.png";
+import Po from "../../../../image/po.png";
 
 import { async } from "@firebase/util";
 import {

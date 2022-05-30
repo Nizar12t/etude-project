@@ -1,0 +1,23 @@
+.container{
+ position: absolute;
+ width: 500px;
+ height: 300px;
+ top: 100px;
+ right: 150px;
+  background-color: blueviolet;
+
+
+}
+
+.container1{
+
+    position: relative;
+    width: 300px;
+    height: 200px;
+
+    top:20px ;
+    right: 20Px;
+
+
+
+}

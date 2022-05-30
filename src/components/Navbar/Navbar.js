@@ -2,7 +2,7 @@ import { React, Component } from "react";
 
 import "./Navbar.css";
 
-import { auth } from "../firebase";
+import { auth } from "../../firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.css";
@@ -25,7 +25,7 @@ function Navbar() {
       <nav>
         {user && <Button onClick={() => signOut(auth)}>Logout</Button>}
 
-        {!user && (
+        {!user && (  
           <NavLink
             to={"/inscrit1"}
             className={({ isActive }) =>

@@ -1,4 +1,3 @@
-
 import { color } from "@chakra-ui/react";
 import { Container, Grid } from "@material-ui/core";
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
@@ -24,7 +23,6 @@ export default function Livres() {
     });
   }, []);
   return (
-   
     <Container>
       <Grid container spacing={1}>
         {articles.length === 0 ? (
@@ -42,22 +40,23 @@ export default function Livres() {
               likes,
               comments,
             }) => (
-              <Grid   item xs={12} sm={6} md={4}>
-                <div className="border mt-3 p-3 bg-light" key={id}>
-                  <div style={{backgroundColor: "rgb(216, 222, 225)", borderRadius:"5px"}} className="row">
-                    <div className="col-3">
+              <Grid item xs={12} sm={6} md={4}>
+                <div key={id}>
+                  <div
+                    style={{
+                      backgroundColor: "rgb(216, 222, 225)",
+                      borderRadius: "5px",
+                    }}
+                    className="row"
+                  >
+                    <div>
                       <Link to={`/Livre/${id}`}>
-                        <img 
+                        <img
                           src={imageUrl}
                           alt="title"
                           style={{ height: 200, width: 200 }}
                         />
                       </Link>
-                    </div>
-                    <div className="col-9 ps-3">
-                      <h3>{title}</h3>
-                      <p>{createdAt.toDate().toDateString()}</p>
-                      <h5>{description}</h5>
                     </div>
                   </div>
                 </div>
@@ -67,6 +66,5 @@ export default function Livres() {
         )}
       </Grid>
     </Container>
-    
   );
 }

@@ -47,7 +47,7 @@
             
             }
     .insc {
-      background-image: url(../Group.png);
+      background-image: url(../../Group.png);
       background-color: rgb(39, 140, 223);
     
       height: "100vh";
@@ -173,8 +173,8 @@ color: #F1F5F9;
 
 
     .container{
-        width: 400px;
+        width: 900px;
         height: auto;
         min-height: 400px;
-        background: yellow;
+        /* background: yellow; */
     }

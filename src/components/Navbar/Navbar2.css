@@ -4,7 +4,7 @@
       justify-content: center; 
       align-items: center; 
       display: flex;
-      background-image: url(../Group.png);
+      background-image: url(../../Group.png);
       background-color: rgb(39, 140, 223);
       position: absolute;
       
@@ -137,7 +137,7 @@ right: 734.82px;
     top: 10px;
     width: 268px;
     height: 380px;
- background-image: url(../image/wasim.png);
+ background-image: url(../../image/wasim.png);
  /* border-radius: 100%; */
 
   }

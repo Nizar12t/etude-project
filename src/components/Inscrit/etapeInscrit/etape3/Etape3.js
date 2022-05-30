@@ -1,10 +1,10 @@
 import React from "react";
 import "./Etape3.css";
 import { NavLink } from "react-router-dom";
-import Gr from "../../../image/Group1.png";
+import Gr from "../../../../image/Group1.png";
 import { useState } from "react";
-import Po from "../../../image/po.png";
-import Logo from "../../../image/Grr.png";
+import Po from "../../../../image/po.png";
+import Logo from "../../../../image/Grr.png";
 import { BsCheckCircle } from "react-icons/bs";
 
 export default function Etape3() {

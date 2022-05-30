@@ -1,12 +1,12 @@
 import "./inscrit.css";
 import Etape1 from "./etapeInscrit/etape1/Etape1";
-import F from "../image/f.png";
-import FF from "../image/ff.png";
-import FFF from "../image/fff.png";
+import F from "../../image/f.png";
+import FF from "../../image/ff.png";
+import FFF from "../../image/fff.png";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { auth } from "../firebase";
+import { auth } from "../../firebase";
 import { toast } from "react-toastify";
 
 export default function Inscrit1() {
@@ -19,7 +19,7 @@ export default function Inscrit1() {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       updateProfile(auth.currentUser, { displayName: name });
-      navigate("etape1");
+      navigate("/etape1");
     } catch (error) {
       toast(error.code, { type: "error" });
     }

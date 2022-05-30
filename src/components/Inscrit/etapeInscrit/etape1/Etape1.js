@@ -1,18 +1,18 @@
 import React from "react";
 import "./Etape1.css";
 import { NavLink } from "react-router-dom";
-import Gr from "../../../image/Group1.png";
+import Gr from "../../../../image/Group1.png";
 import { useState } from "react";
-import Po from "../../../image/po.png";
-import Logo from "../../../image/Grr.png";
+import Po from "../../../../image/po.png";
+import Logo from "../../../../image/Grr.png";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "../../../firebase";
+import { auth } from "../../../../firebase";
 
 export default function Etape1() {
   const [user] = useAuthState(auth);
   return (
-    <>
-      {user && (
+    // <>
+    //   {user && (
         <div className="etape11">
           <div className="etape12">
             <div className="etape121">
@@ -58,7 +58,7 @@ export default function Etape1() {
             </div>
           </div>
         </div>
-      )}
-    </>
+    //   )}
+    // </>
   );
 }

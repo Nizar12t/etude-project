@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 
-
 import { Timestamp, collection, addDoc } from "firebase/firestore";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import "./Addlivre.css";
@@ -31,7 +30,7 @@ export default function Addlivre() {
   };
 
   const handlePublish = () => {
-    if (!formData.title || !formData.description || !formData.image) {
+    if (!formData.image) {
       alert("Please fill all the fields");
       return;
     }
@@ -56,16 +55,12 @@ export default function Addlivre() {
       },
       () => {
         setFormData({
-          title: "",
-          description: "",
           image: "",
         });
 
         getDownloadURL(uploadImage.snapshot.ref).then((url) => {
           const articleRef = collection(db, "Livres");
           addDoc(articleRef, {
-            title: formData.title,
-            description: formData.description,
             imageUrl: url,
             createdAt: Timestamp.now().toDate(),
             createdBy: user.displayName,
@@ -77,7 +72,7 @@ export default function Addlivre() {
   };
 
   return (
-    <div >
+    <div>
       {!user ? (
         <>
           <h2>
@@ -87,12 +82,12 @@ export default function Addlivre() {
         </>
       ) : (
         <>
-        <div className="form-g">
-        <img src={ livre } className="imageon" alt="ffffff" />
-         <div className="form-g1">
-          <h2 className="nouv-chapitre">Add book</h2>
-          <div className="form-group">
-            <div htmlFor="" className="form-title">Title</div>
+          <div className="form-g">
+            <img src={livre} className="imageon" alt="ffffff" />
+            <div className="form-g1">
+              <h2 className="nouv-chapitre">Add book</h2>
+              <div className="form-group">
+              <div htmlFor="" className="form-title">Title</div>
             <input
               type="text"
               name="title"
@@ -131,18 +126,16 @@ export default function Addlivre() {
               </div>
             </div>
           )}
-          <NavLink
-          to="/fiche2"><button
-            className="form-boutton"
-            onClick={handlePublish}
-          >
-            Publish
-          </button></NavLink>
-          </div>
+
+              <NavLink to="/fiche2">
+                <button className="form-boutton" onClick={handlePublish}>
+                  Publish
+                </button>
+              </NavLink>
+            </div>
           </div>
         </>
       )}
     </div>
-    
   );
 }

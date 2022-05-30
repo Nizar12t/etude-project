@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "./inscrit.css";
-import F from "../image/f.png";
-import FF from "../image/ff.png";
-import FFF from "../image/fff.png";
+import F from "../../image/f.png";
+import FF from "../../image/ff.png";
+import FFF from "../../image/fff.png";
 import { useNavigate } from "react-router";
-import { auth } from "../firebase";
+import { auth } from "../../firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
 
 export default function Inscrit1() {

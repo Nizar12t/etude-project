@@ -3,11 +3,11 @@ import { Container, Grid } from "@material-ui/core";
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import React, { useState, useEffect } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import "./Articles.css"
+
 import { Link } from "react-router-dom";
 import { auth, db } from "../../firebase";
 
-export default function Articles() {
+export default function Chapitres() {
   const [articles, setArticles] = useState([]);
   const [user] = useAuthState(auth);
   useEffect(() => {
@@ -42,14 +42,16 @@ export default function Articles() {
               comments,
             }) => (
               <Grid item xs={12} sm={6} md={4}>
-                <div className="bord-Articles" key={id}>
-                  <div className="">
-                    <div className="row-articles">
+                <div style={{ borderRadius:"5px"}} className="border mt-3 p-3 bg-light" key={id}>
+                  <div  
+                  className="row">
+                    <div className="col-3">
                       <Link to={`/Article/${id}`}>
                         <img
                           src={imageUrl}
                           alt="title"
-                          style={{ height: 180, width: 180 }}
+                          style={{ height: 300, width: 300 }}
+                          className="img-articles"
                         />
                       </Link>
                     </div>

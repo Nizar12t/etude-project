@@ -1,10 +1,10 @@
 import { Component, React } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Inscrit from "./components/Inscrit";
-import Inscrit1 from "./components/Inscrit1";
-import Navbar from "./components/Navbar";
-import Navbar2 from "./components/Navbar2";
+import Inscrit from "./components/Inscrit/Inscrit";
+import Inscrit1 from "./components/Inscrit/Inscrit1";
+import Navbar from "./components/Navbar/Navbar";
+import Navbar2 from "./components/Navbar/Navbar2";
 import Home from "./components/Home";
 import Page1 from "./pages/fiche1-page/Page1";
 import Page2 from "./components/Page2";
@@ -13,9 +13,9 @@ import Fiche1 from "./components/fiche/Fiche1";
 import Fiche2 from "./components/fiche/Fiche2";
 import Fiche3 from "./components/Fiche3";
 import Fiche4 from "./components/fiche/Fiche4";
-import Etape1 from "./components/etapeInscrit/etape1/Etape1";
-import Etape2 from "./components/etapeInscrit/etape2/Etape2";
-import Etape3 from "./components/etapeInscrit/etape3/Etape3";
+import Etape1 from "./components/Inscrit/etapeInscrit/etape1/Etape1";
+import Etape2 from "./components/Inscrit/etapeInscrit/etape2/Etape2";
+import Etape3 from "./components/Inscrit/etapeInscrit/etape3/Etape3";
 
 import { ChakraProvider } from "@chakra-ui/react";
 import Kousousiyat from "./components/Kousousiyat";
@@ -26,7 +26,6 @@ import Addarticle from "./components/article/Addarticle";
 import Chapitre from "./components/Chapitre/Chapitre";
 import Livre from "./components/livre/livre";
 import Articles from "./components/article/Articles";
-import ResponsiveDialog from "./components/ResponsiveDialog";
 
 function App() {
 
@@ -60,7 +59,7 @@ function App() {
           <Route exact path="/article/:id" element={<Articles/>} />
 
           
-          <Route exact path="/responsiveDialog" element={<ResponsiveDialog />} />
+          {/* <Route exact path="/responsiveDialog" element={<ResponsiveDialog />} /> */}
           
           
 

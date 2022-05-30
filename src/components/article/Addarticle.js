@@ -78,12 +78,12 @@ export default function Addarticle() {
   return (
     <div >
       {!user ? (
-        <>
+        <div class >
           <h2>
             <Link to="/">Login to create article</Link>
           </h2>
           Don't have an account? <Link to="/inscrit1">Signup</Link>
-        </>
+        </div>
       ) : (
         <>
         
@@ -132,7 +132,7 @@ export default function Addarticle() {
             </div>
           )}
           <NavLink
-          to="/page3"><button
+          to="/fiche4"><button
             className="form-boutton"
             onClick={handlePublish}
           >
